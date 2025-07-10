@@ -3,24 +3,22 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Leads from './components/Leads';
 
-
 function Companies() {
-  return <h2>Companies Page - Εδώ θα είναι η λίστα με τις εταιρείες</h2>;
+  return <h2>Companies Page</h2>;
 }
 
 function Automations() {
-  return <h2>Automations Page - Εδώ θα είναι οι αυτοματισμοί</h2>;
+  return <h2>Automations Page</h2>;
 }
 
 function Messages() {
-  return <h2>Messages Page - Εδώ θα είναι τα προ-ετοιμασμένα μηνύματα</h2>;
+  return <h2>Messages Page</h2>;
 }
 
 function App() {
   return (
     <Router>
       <div style={{ display: 'flex', height: '100vh' }}>
-        {/* Sidebar */}
         <nav style={{
           width: '220px',
           background: '#222',
@@ -45,7 +43,6 @@ function App() {
           </ul>
         </nav>
 
-        {/* Main content */}
         <main style={{ flexGrow: 1, padding: '20px', overflowY: 'auto' }}>
           <Routes>
             <Route path="/" element={<Leads />} />
@@ -60,4 +57,5 @@ function App() {
 }
 
 export default App;
+
 
